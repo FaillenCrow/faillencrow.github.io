@@ -12,7 +12,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="El Mar del Tiempo">
-  <meta property="og:description" content="Catálogo de poemas de Faillen Crow.">
+  <meta property="og:description" content="Catálogo personal de poemas de Faillen Crow.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.elmardeltiempo.com/">
 
@@ -26,12 +26,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- Preload de audio (opcional) -->
-  <link rel="preload" as="audio" href="musica/uwaie.mp3" type="audio/mpeg">
+  <link rel="preload" as="audio" href="musica/Just The Way You Are - Bruno Mars (Boyce Avenue Cover).mp3" type="audio/mpeg">
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css?v=10">
   <style>html, body { overflow-anchor: none; }</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "El Mar del Tiempo",
+      "url": "https://www.elmardeltiempo.com/"
+    }
+  </script>
+
 </head>
+
 <body>
   <!-- Velo para animaciones de fundido -->
   <div id="veil" aria-hidden="true"></div>
@@ -40,8 +51,9 @@
     <!-- Intro -->
     <section id="intro" class="card intro">
       <h1>El mar del tiempo</h1>
+      <p>Catálogo personal de poemas de Faillen Crow.</p>
       <h2>El sabor de la vida 🌷</h2>
-      <p>Con cariño para Ana.</p>
+      <p>Un poema escrito exclusivamente y con mucho cariño para Ana.</p>
       <button id="btnLeer" class="btn" type="button" role="button">📖 Leer</button>
     </section>
 
@@ -65,7 +77,7 @@
 
     <!-- Audio -->
     <audio id="bgm" preload="auto" loop>
-      <source src="musica/uwaie.mp3" type="audio/mpeg">
+      <source src="musica/Just The Way You Are - Bruno Mars (Boyce Avenue Cover).mp3" type="audio/mpeg">
     </audio>
   </div>
 

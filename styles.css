@@ -65,24 +65,21 @@ body{
 
 /* Subtítulo */
 .intro h2{
-  font-family:'Crimson Text', serif;
-  font-size: clamp(1.3rem, 3vw, 1.9rem);
-  font-weight: 400;
-  margin: 10px 0 20px;
-  opacity: .75;
-  letter-spacing: 1px;
-  animation: fadeUp 1.4s ease both;
+  position: relative;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin: 30px 0 10px;
+  animation: fadeUp 1.8s ease both;
 }
 
-/* Línea decorativa tipo libro */
-.intro h2::after{
+/* Línea encima del h2 */
+.intro h2::before{
   content:"";
   display:block;
   width:80px;
   height:2px;
-  background:linear-gradient(to right, transparent, var(--vino), transparent);
-  margin:12px auto 0;
-  opacity:.5;
+  background: linear-gradient(to right, transparent, var(--vino), transparent);
+  margin: 0 auto 20px;
+  opacity: 0.4;
 }
 
 /* Dedicatoria */
