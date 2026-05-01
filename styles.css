@@ -83,12 +83,21 @@ body{
 }
 
 /* Dedicatoria */
-.intro p{
+.intro p:first-of-type{
+  margin:0 0 20px;
+  font-size:1.1rem;
+  opacity:.8;
+  font-style: italic;
+  animation: fadeUp 1.2s ease both; /* 👈 más rápido */
+}
+
+/* P del H2 (dedicatoria) */
+.intro p:last-of-type{
   margin:0 0 28px;
   font-size:1.1rem;
   opacity:.8;
   font-style: italic;
-  animation: fadeUp 1.8s ease both;
+  animation: fadeUp 1.8s ease both; /* 👈 más lento */
 }
 
 /* Botón elegante */
